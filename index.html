@@ -37,17 +37,22 @@
         color: #fff;
         text-decoration: none;
       }
+      .bg-custom2 {
+        background: linear-gradient(to right, #16222a, #3a6073);
+      }
     </style>
   </head>
   <body>
     <!-- Header Part Start -->
-    <header class="bg-custom text-white">
+    <header class="bg-custom2 text-white">
       <div class="container mx-auto">
-        <div class="flex justify-between items-center lg:py-24">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center lg:py-24"
+        >
           <!-- Header Content -->
           <div class="text-center space-y-5">
             <p class="uppercase text-xl">---sale fever---</p>
-            <h2 class="text-6xl font-semibold">
+            <h2 class="lg:text-6xl text-4xl font-semibold">
               Purchase TK 200 or <br />
               above & get
               <span class="text-secondary">20% off</span>
@@ -67,8 +72,7 @@
     <!-- Header Part End -->
 
     <!-- Main Part Start -->
-    <main >
-      <!-- Kitchenware Part -->
+    <main class="bg-custom px-3 lg:py-10">
       <section>
         <div class="container mx-auto">
           <div class="flex my-10 flex-col lg:flex-row">
@@ -76,17 +80,21 @@
 
             <div class="flex-1">
               <div class="mb-32">
-                <h1 class="text-4xl font-semibold mb-3">Kitchenware</h1>
-                <div class="grid grid-cols-3 gap-x-5">
+                <h1 class="text-4xl font-semibold mb-3 text-white">
+                  Kitchenware
+                </h1>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+                >
                   <!-- First Card -->
                   <div
                     onclick=""
-                    class="card cursor-pointer bg-custom shadow-xl text-white"
+                    class="card cursor-pointer bg-custom shadow-2xl text-white"
                   >
                     <figure class="">
                       <img
                         src="./images/prod1.png"
-                        class="mx-auto py-3"
+                        class="mx-auto hover:scale-105 transition-all py-3"
                         alt="Shoes"
                       />
                     </figure>
@@ -132,7 +140,7 @@
                     <figure class="">
                       <img
                         src="./images/prod2.png"
-                        class="mx-auto py-3"
+                        class="mx-auto hover:scale-105 transition-all py-3"
                         alt="Shoes"
                       />
                     </figure>
@@ -178,7 +186,7 @@
                     <figure class="">
                       <img
                         src="./images/prod3.png"
-                        class="mx-auto py-3"
+                        class="mx-auto hover:scale-105 transition-all py-3"
                         alt="Shoes"
                       />
                     </figure>
@@ -220,8 +228,12 @@
                 </div>
               </div>
               <div>
-                <h1 class="text-4xl font-semibold mb-3">Sportswear</h1>
-                <div class="grid grid-cols-3 gap-x-5">
+                <h1 class="text-4xl font-semibold mb-3 text-white">
+                  Sportswear
+                </h1>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+                >
                   <!-- First Card -->
                   <div
                     onclick=""
@@ -230,7 +242,7 @@
                     <figure class="">
                       <img
                         src="./images/prod4.png"
-                        class="mx-auto py-3"
+                        class="mx-auto hover:scale-105 transition-all py-3"
                         alt="Shoes"
                       />
                     </figure>
@@ -276,7 +288,7 @@
                     <figure class="">
                       <img
                         src="./images/prod5.png"
-                        class="mx-auto py-3"
+                        class="mx-auto py-3 hover:scale-105 transition-all"
                         alt="Shoes"
                       />
                     </figure>
@@ -322,7 +334,7 @@
                     <figure class="">
                       <img
                         src="./images/prod6.png"
-                        class="mx-auto py-3"
+                        class="mx-auto py-3 hover:scale-105 transition-all"
                         alt="Shoes"
                       />
                     </figure>
@@ -365,8 +377,51 @@
               </div>
             </div>
             <!-- Cart Container -->
-            <div class="w-[400px]">
-              <h1 class="text-5xl">Cart container</h1>
+            <div class="lg:w-[400px] mx-auto my-14">
+              <div class="w-[342px] bg-white p-8 mx-auto space-y-3 rounded-lg">
+                <h1 class="text-2xl">Have a Cupon ?</h1>
+                <div class="relative mb-4 flex flex-wrap items-stretch">
+                  <input
+                    type="text"
+                    class="relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                    placeholder="Cupon Code"
+                    aria-label="Cupon Code"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="rounded-r px-6 pb-2 pt-2.5 text-xs text-white font-bold uppercase bg-secondary"
+                    id="button-addon2"
+                  >
+                    apply
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[342px] mt-10 bg-white p-8 mx-auto space-y-3 rounded-lg"
+              >
+                <div class="text-black">
+                  <ol class="list-inside list-decimal">
+                    <li>Akash Khan</li>
+                    <li>Akash Khan</li>
+                    <li>Akash Khan</li>
+                  </ol>
+                </div>
+                <hr />
+                <p class="text-xl">
+                  Total Price : <span class="text-slate-400">00.00</span>
+                </p>
+                <p class="text-xl">
+                  Discount : <span class="text-slate-400">00.00</span>
+                </p>
+                <p class="text-xl">
+                  Total : <span class="text-slate-400">00.00</span>
+                </p>
+              </div>
+              <button
+                class="text-white bg-secondary flex text-center mx-auto px-10 font-semibold p-3 rounded-lg mt-5"
+              >
+                Make Purchase
+              </button>
             </div>
           </div>
         </div>
