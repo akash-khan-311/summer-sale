@@ -1,13 +1,381 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Summer Sale</title>
+    <!-- Daisy Ui Css Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .bg-custom {
+        background: linear-gradient(to right, #141e30, #243b55);
+      }
+      .btn-custom {
+        background-image: linear-gradient(
+          to right,
+          #314755 0%,
+          #26a0da 51%,
+          #314755 100%
+        );
+        margin: 10px;
+        padding: 12px 25px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        /* box-shadow: 0 0 20px #eee; */
+        border-radius: 10px;
+        display: block;
+      }
+      .btn-custom:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
-    <header class=""></header>
+    <!-- Header Part Start -->
+    <header class="bg-custom text-white">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center lg:py-24">
+          <!-- Header Content -->
+          <div class="text-center space-y-5">
+            <p class="uppercase text-xl">---sale fever---</p>
+            <h2 class="text-6xl font-semibold">
+              Purchase TK 200 or <br />
+              above & get
+              <span class="text-secondary">20% off</span>
+            </h2>
+            <div class="flex items-center justify-center gap-x-5">
+              <p>Use Promo Code</p>
+              <button class="btn-custom disc-btn">sell200</button>
+            </div>
+          </div>
+          <!-- Header Image -->
+          <div class="">
+            <img class="lg:w-[550px]" src="./images/Summer 1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Part End -->
 
+    <!-- Main Part Start -->
+    <main >
+      <!-- Kitchenware Part -->
+      <section>
+        <div class="container mx-auto">
+          <div class="flex my-10 flex-col lg:flex-row">
+            <!-- Shop Container -->
+
+            <div class="flex-1">
+              <div class="mb-32">
+                <h1 class="text-4xl font-semibold mb-3">Kitchenware</h1>
+                <div class="grid grid-cols-3 gap-x-5">
+                  <!-- First Card -->
+                  <div
+                    onclick=""
+                    class="card cursor-pointer bg-custom shadow-xl text-white"
+                  >
+                    <figure class="">
+                      <img
+                        src="./images/prod1.png"
+                        class="mx-auto py-3"
+                        alt="Shoes"
+                      />
+                    </figure>
+                    <div class="card-body">
+                      <div class="rating mx-auto">
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                          checked
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                      </div>
+                      <h2 class="card-title mx-auto">K. Accessories</h2>
+                      <p class="text-center text-slate-400">
+                        Price : <span>39.00 </span>TK
+                      </p>
+                    </div>
+                  </div>
+                  <!-- second Card -->
+                  <div
+                    class="card cursor-pointer bg-custom shadow-xl text-white"
+                  >
+                    <figure class="">
+                      <img
+                        src="./images/prod2.png"
+                        class="mx-auto py-3"
+                        alt="Shoes"
+                      />
+                    </figure>
+                    <div class="card-body">
+                      <div class="rating mx-auto">
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                          checked
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                      </div>
+                      <h2 class="card-title mx-auto">K. Accessories</h2>
+                      <p class="text-center text-slate-400">
+                        Price : <span>25.00 </span>TK
+                      </p>
+                    </div>
+                  </div>
+                  <!-- third Card -->
+                  <div
+                    class="card cursor-pointer bg-custom shadow-xl text-white"
+                  >
+                    <figure class="">
+                      <img
+                        src="./images/prod3.png"
+                        class="mx-auto py-3"
+                        alt="Shoes"
+                      />
+                    </figure>
+                    <div class="card-body">
+                      <div class="rating mx-auto">
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                          checked
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                      </div>
+                      <h2 class="card-title mx-auto">Home Cooker</h2>
+                      <p class="text-center text-slate-400">
+                        Price : <span>49.00 </span>TK
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-4xl font-semibold mb-3">Sportswear</h1>
+                <div class="grid grid-cols-3 gap-x-5">
+                  <!-- First Card -->
+                  <div
+                    onclick=""
+                    class="card cursor-pointer bg-custom shadow-xl text-white"
+                  >
+                    <figure class="">
+                      <img
+                        src="./images/prod4.png"
+                        class="mx-auto py-3"
+                        alt="Shoes"
+                      />
+                    </figure>
+                    <div class="card-body">
+                      <div class="rating mx-auto">
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                          checked
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                      </div>
+                      <h2 class="card-title mx-auto">Sports Back Cap</h2>
+                      <p class="text-center text-slate-400">
+                        Price : <span>49.00 </span>TK
+                      </p>
+                    </div>
+                  </div>
+                  <!-- second Card -->
+                  <div
+                    class="card cursor-pointer bg-custom shadow-xl text-white"
+                  >
+                    <figure class="">
+                      <img
+                        src="./images/prod5.png"
+                        class="mx-auto py-3"
+                        alt="Shoes"
+                      />
+                    </figure>
+                    <div class="card-body">
+                      <div class="rating mx-auto">
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                          checked
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                      </div>
+                      <h2 class="card-title mx-auto">Full Jersey Set</h2>
+                      <p class="text-center text-slate-400">
+                        Price : <span>69 .00 </span>TK
+                      </p>
+                    </div>
+                  </div>
+                  <!-- third Card -->
+                  <div
+                    class="card cursor-pointer bg-custom shadow-xl text-white"
+                  >
+                    <figure class="">
+                      <img
+                        src="./images/prod6.png"
+                        class="mx-auto py-3"
+                        alt="Shoes"
+                      />
+                    </figure>
+                    <div class="card-body">
+                      <div class="rating mx-auto">
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                          checked
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          class="mask mask-star-2 bg-orange-400"
+                        />
+                      </div>
+                      <h2 class="card-title mx-auto">Sports cates</h2>
+                      <p class="text-center text-slate-400">
+                        Price : <span>159.00 </span>TK
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Cart Container -->
+            <div class="w-[400px]">
+              <h1 class="text-5xl">Cart container</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main Part End -->
+    <!-- Daisy UI JS Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Main Js File Link -->
     <script src="./js/app.js"></script>
   </body>
 </html>
