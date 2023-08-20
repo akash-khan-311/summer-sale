@@ -47,7 +47,7 @@ function cardEventHandler(data) {
   const li = document.createElement("li");
   li.innerText = productName;
   listParent.appendChild(li);
-  setElementValue("grand-total", totalPriceSum);
+  setElementValue("grand-total", totalPriceSum.toFixed(2));
 }
 // Set Evenet Listener to The Apply Cupon Button
 
@@ -59,6 +59,7 @@ document
     console.log(cuponCodeValue);
     if (cuponCodeValue !== "SELL200") {
       alert("invalid cupon code");
+      cuponCodeField.value = "";
       return;
     }
 
@@ -69,3 +70,7 @@ document
     const grandTotal = (totalPrice - discountPrice).toFixed(2);
     setElementValue("grand-total", grandTotal);
   });
+
+document.getElementById("modal-btn").addEventListener("click", function () {
+  window.location.href = "index.html";
+});
