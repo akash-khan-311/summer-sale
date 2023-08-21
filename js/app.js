@@ -71,6 +71,3 @@ document
     setElementValue("grand-total", grandTotal);
   });
 
-document.getElementById("modal-btn").addEventListener("click", function () {
-  window.location.href = "index.html";
-});
